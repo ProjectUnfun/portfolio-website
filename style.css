@@ -301,7 +301,7 @@ h2 a:hover {
 
 
 
-@media (max-width: 550px) {
+@media only screen and (max-width: 550px) {
   h1 {
     text-align: center;
   }
@@ -333,7 +333,7 @@ h2 a:hover {
   }
 
   .nav-list {
-    margin-left: 0.1rem;
+    margin-left: 0;
   }
 
   .nav-list a {
