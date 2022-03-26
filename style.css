@@ -7,7 +7,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: #444444;
+  background: #555555;
   border-bottom: 4px solid black;
 }
 
@@ -29,11 +29,23 @@
 }
 
 .nav-list a:hover {
-  color: rgba(0, 0, 200, 0.5);
+  color: #880000;
 }
 
 #contact-list-item {
   border-right: 3px solid #efefef;
+}
+
+#unfun-icon {
+  width: 64px;
+  height: 64px;
+}
+
+#unfun-banner {
+  width: 576px;
+  height: 48px;
+  margin-top: 0.5rem;
+  padding-left: 22rem;
 }
 
 .spacer {
@@ -66,6 +78,8 @@ h1 {
   margin: 0;
   margin-top: 1rem;
   padding: 0;
+  color: yellow;
+  font-weight: 600;
 }
 
 #divider {
@@ -99,8 +113,12 @@ h1 {
 }
 
 .projects img {
-  border: 3px solid black;
+  border: 5px solid black;
   border-radius: 10px;
+}
+
+.projects img:hover{
+  border: 5px solid #880000;
 }
 
 h2 {
@@ -142,6 +160,8 @@ h2 a:hover {
   background-color: #353535;
   font-family: VT323, sans-serif;
   font-size: 2rem;
+  background-image: url("https://preview.redd.it/6axfm8uck3oy.png?width=960&crop=smart&auto=webp&s=05381055515b4f9da911d385b8dca75e128a4200");
+  background-size: cover;
 }
 
 .contact-logo {
@@ -156,7 +176,45 @@ h2 a:hover {
   border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 1250px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #333333;
+    font-family: VT323, sans-serif;
+    font-size: 2rem;
+    color: #dfdfdf;
+    background-size: cover;
+  }
+
+  #single-player {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  #multi-player {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .contact-logo {
+    height: 12rem;
+    width: 16rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #unfun-banner {
+    padding-left: 3rem;
+  }
+}
+
+
+@media (max-width: 900px) {
   #contact {
     display: flex;
     flex-direction: column;
@@ -206,12 +264,60 @@ h2 a:hover {
     padding: 0;
   }
   
-  #welcome-sub-headline {
-    color: yellow;
-    font-weight: 600;
-  }
-  
   .contact-tile {
     margin-bottom: 3rem;
+  }
+
+  .welcome-section {
+    height: 20rem;
+    background-size: cover;
+  }
+
+  #unfun-banner {
+    visibility: hidden;
+  }
+}
+
+
+
+@media (max-width: 550px) {
+  h1 {
+    padding-left: 6rem;
+  }
+
+  #game-pic {
+    height: 16rem;
+    width: 20rem;
+  }
+
+  #single-player {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #multi-player {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .welcome-section {
+    background-size: contain;
+    height: 20rem;
+  }
+
+  .nav-list {
+    margin-left: 0.1rem;
+  }
+
+  .nav-list a {
+    font-size: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
