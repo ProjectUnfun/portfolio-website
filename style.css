@@ -176,6 +176,14 @@ h2 a:hover {
   animation: shake 0.5s;
 }
 
+h1:hover {
+  animation: shake 0.5s;
+}
+
+#welcome-sub-headline:hover {
+  animation: shake 0.5s;
+}
+
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   30% { transform: translate(3px, 2px) rotate(0deg); }
