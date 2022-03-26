@@ -96,7 +96,8 @@ h1 {
 #projects {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   background-color: #333333;
   font-family: VT323, sans-serif;
@@ -118,17 +119,18 @@ h1 {
 }
 
 .projects img:hover{
-  border: 5px solid #880000;
+  border-color: #880000;
 }
 
-h2 {
+.projects h2 {
   text-align: center;
   margin: 0;
+  padding: 0;
   margin-bottom: 1rem;
 }
 
 h2 a {
-  color: #dfdfdf;
+  color: #EFEFEF;
 }
 
 h2 a:hover {
@@ -139,14 +141,13 @@ h2 a:hover {
   padding-top: 5rem;
 }
 
-#single-player {
-  padding-top: 2rem;
-  padding-right: 7rem;
-}
-
-#multi-player {
-  padding-top: 2rem;
-  padding-left: 7rem;
+.project-tile{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 #contact {
@@ -167,12 +168,28 @@ h2 a:hover {
 .contact-logo {
   height: 12rem;
   width: 16rem;
-  margin-left: 7rem;
-  margin-right: 7rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.contact-logo:hover {
+  animation: shake 0.5s;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
 }
 
 #twitter-contact {
-  border: 2px solid white;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+#gmail-contact {
+  border: 2px solid black;
   border-radius: 10px;
 }
 
@@ -202,10 +219,14 @@ h2 a:hover {
   }
 
   .contact-logo {
-    height: 12rem;
-    width: 16rem;
+    height: 8rem;
+    width: 12rem;
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .contact-tile h2 {
+    font-size: 2rem;
   }
 
   #unfun-banner {
@@ -222,7 +243,7 @@ h2 a:hover {
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 55rem;
+    height: 65rem;
     background-color: #353535;
     font-family: VT323, sans-serif;
     font-size: 2rem;
@@ -319,5 +340,9 @@ h2 a:hover {
     font-size: 2rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+
+  #contact {
+    height: 65rem;
   }
 }
