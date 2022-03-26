@@ -303,7 +303,7 @@ h2 a:hover {
 
 @media (max-width: 550px) {
   h1 {
-    padding-left: 6rem;
+    text-align: center;
   }
 
   #game-pic {
@@ -344,5 +344,13 @@ h2 a:hover {
 
   #contact {
     height: 65rem;
+  }
+
+  #unfun-icon {
+    visibility: hidden;
+  }
+
+  .nav-list {
+    padding: 0;
   }
 }
