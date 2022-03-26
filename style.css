@@ -354,3 +354,15 @@ h2 a:hover {
     padding: 0;
   }
 }
+
+@media only screen and (max-device-width: 480px) {
+  #unfun-icon {
+    visibility: hidden;
+  }
+
+  .nav-list {
+    padding-left: 0;
+    margin-left: 0;
+  }
+
+}
