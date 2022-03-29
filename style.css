@@ -74,12 +74,15 @@ h1 {
 
 #welcome-sub-headline {
   font-family: VT323, sans-serif;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin: 0;
   margin-top: 1rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
   padding: 0;
   color: yellow;
-  font-weight: 600;
+  font-weight: 300;
+  text-align: center;
 }
 
 #divider {
@@ -338,7 +341,7 @@ h1:hover {
 
   .welcome-section {
     background-size: contain;
-    height: 20rem;
+    height: 30rem;
   }
 
   .nav-list {
