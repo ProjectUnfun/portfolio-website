@@ -24,10 +24,11 @@
     <!--
         NAV BAR 
     -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top border-bottom border-secondary">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top border-bottom border-secondary">
         <div class="container">
-            
+
             <a href="#" class="navbar-brand fw-bold text-warning">Kenny's Portfolio</a>
+            <i class="bi bi-person-square text-white text-center h5"></i>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -35,13 +36,13 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto" id="nav-list">
-                    <li class="nav-item lead px-1">
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
                         <a href="#welcome" class="nav-link">Welcome</a>
                     </li>
-                    <li class="nav-item lead px-1">
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
                         <a href="#projects" class="nav-link">Projects</a>
                     </li>
-                    <li class="nav-item lead px-1">
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
                 </ul>
@@ -56,9 +57,9 @@
         <div class="container">
 
             <h1 class="fw-bold text-primary text-center pt-5">
-                <i class="bi bi-play-circle text-white text-center h1 px-2"></i>
+                <i class="bi bi-people text-white text-center h1 px-2"></i>
                 Welcome
-                <i class="bi bi-play-circle text-white text-center h1 px-2"></i>
+                <i class="bi bi-people text-white text-center h1 px-2"></i>
             </h1>
 
             <div class="d-sm-flex align-items-center justify-content-between">
@@ -67,7 +68,7 @@
                     <h1>Hi, I'm <span class="text-info">Kenny  👋</span></h1>
                     
                     <p class="lead my-4 text-warning">
-                        I'm a Game Developer hobbyist diligently pursuing the improvement of my programming skills so I may gain entry level employment in professional software development of any kind.
+                        I'm a Game Developer hobbyist diligently pursuing the improvement of my programming skills with the goal of gaining entry level employment in professional software development.
                         <br>
                         Please take a moment to enjoy the game prototypes available in the projects section of this page.
                     </p>
@@ -79,7 +80,9 @@
     <!--
         DIV FOR SPACING
     -->
-    <div class="bg-secondary text-secondary p-4"></div>
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
 
     <!--
         PROJECTS SECTION
@@ -95,29 +98,29 @@
 
             <div class="row text-center g-4">
                 <div class="col-md text-light">
-                    <h3 class="card-title mb-3 text-warning">Legio Mortis</h3>
-                    <p class="card-text lead">
-                        A single player game prototype with multiple classes, skeletons, item drops, and more.
-                    </p>
+                    <h2 class="mb-3 text-light">Legio Mortis</h2>
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <img class="img-fluid pb-2" src="assets/SinglePlayer.png" alt="">
-                            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank" class="btn btn-danger w-100">Play Now</a>
+                            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank" class="btn btn-primary w-100">Play Now</a>
                         </div>
                     </div>
+                    <p class="lead py-3 text-warning">
+                        A single player game prototype with multiple classes, skeletons, item drops, and more.
+                    </p>
                 </div>
 
                 <div class="col-md text-light">
-                    <h3 class="card-title mb-3 text-warning">Legio Mortis Online</h3>
-                    <p class="card-text lead">
-                        A server-authoritative multiplayer, game prototype where you can fight bots and other connected players.
-                    </p>
+                    <h2 class="mb-3 text-light">Legio Mortis Online</h2>
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <img class="img-fluid pb-2" src="assets/MultiPlayer.png" alt="">
-                            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank" class="btn btn-danger w-100">Play Now</a>
+                            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank" class="btn btn-primary w-100">Play Now</a>
                         </div>
                     </div>
+                    <p class="lead py-3 text-warning">
+                        A server-authoritative multiplayer, game prototype where you can fight bots and other connected players.
+                    </p>
                 </div>
             </div>
         </div>
@@ -126,54 +129,59 @@
     <!--
         DIV FOR SPACING
     -->
-    <div class="bg-secondary text-secondary p-4"></div>
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
 
     <!--
         CONTACT SECTION
     -->
-    <section class="p-5 bg-dark">
+    <section id="contact" class="p-5 bg-dark">
         <div class="container">
 
-            <h1 class="fw-bold text-primary text-center pb-5">
+            <h1 class="fw-bold text-primary text-center">
                 <i class="bi bi-link text-white text-center h1 px-2"></i>
                 Contact
                 <i class="bi bi-link text-white text-center h1 px-2"></i>
             </h1>
+            <p class="lead text-warning text-center pb-5">
+                Professional Resume Available Upon Request
+            </p>
 
             <div class="row g-4">
 
-                <div class="col-lg-6 col-xl-3">
-                    <div class="card bg-secondary">
-                        <div class="card-body text-center">
-                            <img src="assets/githubPixelArt.png" class="mb-3 rounded" alt="">
-                            <a href="#" target="_blank" class="btn btn-danger w-100">Github</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-xl-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card bg-secondary">
                         <div class="card-body text-center">
                             <img src="assets/gmaillogo.png" class="mb-3 rounded" alt="">
-                            <a href="#" target="_blank" class="btn btn-danger w-100">Gmail</a>
+                            <a href="mailto:ProjectUnfun@gmail.com" target="_blank" class="btn btn-primary w-100">Gmail</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xl-3">
+                <div class="col-md-6 col-xl-3">
                     <div class="card bg-secondary">
                         <div class="card-body text-center">
-                            <img src="assets/twitterPixelArt.png" class="mb-3 rounded" alt="">
-                            <a href="#" target="_blank" class="btn btn-danger w-100">Twitter</a>
+                            <img src="assets/twitterLogo.png" class="mb-3 rounded" alt="">
+                            <a href="https://twitter.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Twitter</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-lg-6 col-xl-3">
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <img src="assets/githubLogo.png" class="mb-3 rounded" alt="">
+                            <a href="https://github.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
                     <div class="card bg-secondary">
                         <div class="card-body text-center">
                             <img src="assets/freeCodeCampLogo.png" class="mb-3 rounded" alt="">
-                            <a href="#" target="_blank" class="btn btn-danger w-100">freeCodeCamp</a>
+                            <a href="https://www.freecodecamp.org/ProjectUnfun" target="_blank" class="btn btn-primary w-100">freeCodeCamp</a>
                         </div>
                     </div>
                 </div>
@@ -181,6 +189,34 @@
             </div>
         </div>
     </section>
+
+    <!--
+        DIV FOR SPACING
+    -->
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
+
+    <!--
+        FOOTER SECTION
+    -->
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+        <div class="container">
+            <img src="assets/NoTextNoBG.png" alt="" class="px-2">
+            <img src="assets/BannerPU.png" alt="" class="d-none d-md-inline-block">
+            <img src="assets/NoTextNoBG.png" alt="" class="px-2">
+            <p class="lead fw-bold mt-5">
+                &copy 2022 <span class="text-danger">Project Unfun</span>
+            </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            </a>
+            <a href="#" class="position-absolute bottom-0 start-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            </a>
+        </div>
+    </footer>
+
     
     <!--
         CDN for Bootstrap JS Bundle file
