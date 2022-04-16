@@ -4,107 +4,227 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--
+        CDN for Bootstrap CSS file
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--
+        CDN for Bootstrap icons file
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Kenny's Portfolio</title>
 </head>
 <body>
-    <nav id="navbar" class="nav">
-      <img src="assets/NoTextNoBG.png" alt="Project Unfun Icon" id="unfun-icon">
-        <ul class="nav-list">
-          <li>
-            <a href="#welcome-section">Welcome</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li id="contact-list-item">
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-        <img src="assets/BannerText.png" alt="Project Unfun Banner" id="unfun-banner">
-      </nav>
-      
-      <div class="spacer"></div>
-      
-      <section id="welcome-section" class="welcome-section">
-        <h1>Hi, I'm Kenny</h1>
-        <p id="welcome-sub-headline">I'm a 2D Game Dev hobbyist looking to improve my skill set and gain entry level employment in software development.</p>
-      </section>
-      
-      <div id="divider"></div>
-      
-      <section id="projects" class="projects">
-      
-        <div id="single-player" class="project-tile">
-          <h2>
-            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank">Legio Mortis
-            </a>
-          </h2>
-          <a href="https://projectunfun.itch.io/legio-mortis" target="_blank">
-            <img id="game-pic" src="assets/SinglePlayer.png" alt="Single player game">
-          </a>
-          <p>
-            A single player endless combat<br> game prototype with class selection, item<br> drops, power-ups, and more.
-          </p>
-        </div>
-      
-        <div id="multi-player" class="project-tile">
-          <h2>
-            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank">Legio Mortis Online
-            </a>
-          </h2>
-          <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank">
-            <img id="game-pic" src="assets/MultiPlayer.png" alt="Multi player game">
-          </a>
-          <p>
-            A multi-player, server-authoritative,<br> endless combat game prototype where you can<br> fight bots and other connected players.
-          </p>
-        </div>
-      
-      </section>
-      
-      <div id="divider"></div>
-      
-      <section id="contact">
-        <div class="contact-tile">
-          <h2>
-            <a href="https://github.com/ProjectUnfun" target="_blank" target="_blank">Github
-            </a>
-          </h2>
-          <a id="profile-link" href="https://github.com/ProjectUnfun" target="_blank">
-            <img class="contact-logo" src="https://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/03791199dd1b9c9.png" alt="Pixel art Github logo">
-          </a>
-        </div>
+    
+    <!--
+        NAV BAR 
+    -->
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top border-bottom border-secondary">
+        <div class="container">
 
-        <div class="contact-tile">
-          <h2>
-            <a href="mailto:ProjectUnfun@gmail.com" target="_blank" target="_blank">Gmail
-            </a>
-          </h2>
-          <a href="mailto:ProjectUnfun@gmail.com" target="_blank">
-            <img class="contact-logo" id="gmail-contact" src="https://images.indianexpress.com/2020/10/Gmail-new-logo.jpg" alt="Gmail logo">
-          </a>
+            <a href="#" class="navbar-brand fw-bold text-warning">Kenny's Portfolio</a>
+            <i class="bi bi-person-square text-white text-center h5"></i>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto" id="nav-list">
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
+                        <a href="#welcome" class="nav-link">Welcome</a>
+                    </li>
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      
-        <div class="contact-tile">
-          <h2>
-            <a href="https://twitter.com/ProjectUnfun" target="_blank" target="_blank">Twitter
-            </a>
-          </h2>
-          <a href="https://twitter.com/ProjectUnfun" target="_blank">
-            <img class="contact-logo" id="twitter-contact" src="https://cdn.dribbble.com/users/1189961/screenshots/3549327/media/fb9bc7589c1f083d10405f463cc0b3dd.jpg?compress=1&resize=800x600&vertical=top" alt="Pixel art Twitter logo">
-          </a>
+    </nav>
+
+    <!--
+        SHOWCASE SECTION
+    -->
+    <section id="welcome" class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <div class="container">
+
+            <h1 class="fw-bold text-primary text-center pt-5">
+                <i class="bi bi-people text-white text-center h1 px-2"></i>
+                Welcome
+                <i class="bi bi-people text-white text-center h1 px-2"></i>
+            </h1>
+
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <img class="img-fluid w-50 d-none d-md-block py-5" src="assets/dev.svg" alt="">
+                <div class="px-5 pt-5">
+                    <h1>Hi, I'm <span class="text-info">Kenny  👋</span></h1>
+                    
+                    <p class="lead my-4 text-warning">
+                        I'm a Game Developer hobbyist diligently pursuing the improvement of my programming skills with the goal of gaining entry level employment in professional software development.
+                        <br>
+                        Please take a moment to enjoy the game prototypes available in the projects section of this page.
+                    </p>
+                </div>
+            </div>
         </div>
-      
-        <div class="contact-tile">
-          <h2>
-            <a href="https://www.freecodecamp.org/ProjectUnfun" target="_blank" target="_blank">freeCodeCamp
-            </a>
-          </h2>
-          <a href="https://www.freecodecamp.org/ProjectUnfun" target="_blank">
-            <img class="contact-logo" src="https://avatars.githubusercontent.com/u/70107528?s=200&v=4" alt="freeCodeCamp logo">
-          </a>
+    </section>
+
+    <!--
+        DIV FOR SPACING
+    -->
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
+
+    <!--
+        PROJECTS SECTION
+    -->
+    <section id="projects" class="p-5 bg-dark">
+        <div class="container">
+            
+            <h1 class="fw-bold text-primary text-center pb-5">
+                <i class="bi bi-play-circle text-white text-center h1 px-2"></i>
+                Projects
+                <i class="bi bi-play-circle text-white text-center h1 px-2"></i>
+            </h1>
+
+            <div class="row text-center g-4">
+                <div class="col-md text-light">
+                    <h2 class="mb-3 text-light">Legio Mortis</h2>
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <img class="img-fluid pb-2" src="assets/SinglePlayer.png" alt="">
+                            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank" class="btn btn-primary w-100">Play Now</a>
+                        </div>
+                    </div>
+                    <p class="lead py-3 text-warning">
+                        A single player game prototype with multiple classes, skeletons, item drops, and more.
+                    </p>
+                </div>
+
+                <div class="col-md text-light">
+                    <h2 class="mb-3 text-light">Legio Mortis Online</h2>
+                    <div class="card bg-secondary text-light">
+                        <div class="card-body text-center">
+                            <img class="img-fluid pb-2" src="assets/MultiPlayer.png" alt="">
+                            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank" class="btn btn-primary w-100">Play Now</a>
+                        </div>
+                    </div>
+                    <p class="lead py-3 text-warning">
+                        A server-authoritative multiplayer, game prototype where you can fight bots and other connected players.
+                    </p>
+                </div>
+            </div>
         </div>
-      </section>
+    </section>
+
+    <!--
+        DIV FOR SPACING
+    -->
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
+
+    <!--
+        CONTACT SECTION
+    -->
+    <section id="contact" class="p-5 bg-dark">
+        <div class="container">
+
+            <h1 class="fw-bold text-primary text-center">
+                <i class="bi bi-link text-white text-center h1 px-2"></i>
+                Contact
+                <i class="bi bi-link text-white text-center h1 px-2"></i>
+            </h1>
+            <p class="lead text-warning text-center pb-5">
+                Professional Resume Available Upon Request
+            </p>
+
+            <div class="row g-4">
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <img src="assets/gmaillogo.png" class="mb-3 rounded" alt="">
+                            <a href="mailto:ProjectUnfun@gmail.com" target="_blank" class="btn btn-primary w-100">Gmail</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <img src="assets/twitterLogo.png" class="mb-3 rounded" alt="">
+                            <a href="https://twitter.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <img src="assets/githubLogo.png" class="mb-3 rounded" alt="">
+                            <a href="https://github.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Github</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xl-3">
+                    <div class="card bg-secondary">
+                        <div class="card-body text-center">
+                            <img src="assets/freeCodeCampLogo.png" class="mb-3 rounded" alt="">
+                            <a href="https://www.freecodecamp.org/ProjectUnfun" target="_blank" class="btn btn-primary w-100">freeCodeCamp</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--
+        DIV FOR SPACING
+    -->
+    <div class="bg-secondary p-4">
+        <div class="bg-light p-1 rounded"></div>
+    </div>
+
+    <!--
+        FOOTER SECTION
+    -->
+    <footer class="p-5 bg-dark text-light text-center position-relative">
+        <div class="container">
+            <div class="d-none d-md-block">
+                <img src="assets/NoTextNoBG.png" alt="" class="px-2">
+                <img src="assets/BannerPU.png" alt="">
+                <img src="assets/NoTextNoBG.png" alt="" class="px-2">
+            </div>
+
+            <p class="lead fw-bold mt-5">
+                &copy 2022 <span class="text-danger">Project Unfun</span>
+            </p>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            </a>
+            <a href="#" class="position-absolute bottom-0 start-0 p-5">
+                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            </a>
+        </div>
+    </footer>
+
+    
+    <!--
+        CDN for Bootstrap JS Bundle file
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 </body>
 </html>

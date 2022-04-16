@@ -10,6 +10,10 @@
 
 
 ## Contacts on display
-- Github
+- Gmail
 - Twitter
+- Github
 - freeCodeCamp
+
+## Update April 15 2022
+> CSS overhauled with uncustomized Bootstrap 5
