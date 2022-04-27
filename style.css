@@ -1,7 +1,19 @@
+body {
+    font-family: monospace;
+}
+
 #nav-list a{
     color: #0dcaf0;
 }
 
 #nav-list a:hover {
+    color: white;
+}
+
+a.arrow-nav {
+    color: #0dcaf0;
+}
+
+a.arrow-nav:hover {
     color: white;
 }

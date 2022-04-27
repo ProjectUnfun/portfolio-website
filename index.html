@@ -24,11 +24,10 @@
     <!--
         NAV BAR 
     -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 fixed-top border-bottom border-secondary">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-1 fixed-top border-bottom border-secondary">
         <div class="container">
 
-            <a href="#" class="navbar-brand fw-bold text-warning">Kenny's Portfolio</a>
-            <i class="bi bi-person-square text-white text-center h5"></i>
+            <h3 class="fw-bold text-light">Kenny's <span class="text-warning">Portfolio</span></h3>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
                 <span class="navbar-toggler-icon"></span>
@@ -36,14 +35,14 @@
 
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto" id="nav-list">
-                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
-                        <a href="#welcome" class="nav-link">Welcome</a>
+                    <li class="nav-item lead btn">
+                        <a href="#welcome" class="nav-link h5 mt-1">Welcome</a>
                     </li>
-                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
-                        <a href="#projects" class="nav-link">Projects</a>
+                    <li class="nav-item lead btn">
+                        <a href="#projects" class="nav-link h5 mt-1">Projects</a>
                     </li>
-                    <li class="nav-item lead p-1 m-1 btn btn-secondary">
-                        <a href="#contact" class="nav-link">Contact</a>
+                    <li class="nav-item lead btn">
+                        <a href="#contact" class="nav-link h5 mt-1">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,10 +52,10 @@
     <!--
         SHOWCASE SECTION
     -->
-    <section id="welcome" class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
+    <section id="welcome" class="bg-secondary text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
         <div class="container">
 
-            <h1 class="fw-bold text-primary text-center pt-5">
+            <h1 class="fw-bold text-info text-center pt-5">
                 <i class="bi bi-people text-white text-center h1 px-2"></i>
                 Welcome
                 <i class="bi bi-people text-white text-center h1 px-2"></i>
@@ -68,9 +67,11 @@
                     <h1>Hi, I'm <span class="text-info">Kenny  👋</span></h1>
                     
                     <p class="lead my-4 text-warning">
-                        I'm a Game Developer hobbyist diligently pursuing the improvement of my programming skills with the goal of gaining entry level employment in professional software development.
-                        <br>
+                        I'm a Game Developer pursuing the constant improvement of my skill set with the goal of gaining entry level employment in software development.
+                        <br><br>
                         Please take a moment to enjoy the game prototypes available in the projects section of this page.
+                        <br><br>
+                        Follow my freeCodeCamp contact link to view the projects and certificates I've completed in their curriculum.
                     </p>
                 </div>
             </div>
@@ -80,8 +81,8 @@
     <!--
         DIV FOR SPACING
     -->
-    <div class="bg-secondary p-4">
-        <div class="bg-light p-1 rounded"></div>
+    <div class="bg-light p-4">
+        <div class="bg-dark p-1 rounded"></div>
     </div>
 
     <!--
@@ -102,7 +103,7 @@
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <img class="img-fluid pb-2" src="assets/SinglePlayer.png" alt="">
-                            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank" class="btn btn-primary w-100">Play Now</a>
+                            <a href="https://projectunfun.itch.io/legio-mortis" target="_blank" class="btn btn-danger w-100 mt-2">Play Now</a>
                         </div>
                     </div>
                     <p class="lead py-3 text-warning">
@@ -115,7 +116,7 @@
                     <div class="card bg-secondary text-light">
                         <div class="card-body text-center">
                             <img class="img-fluid pb-2" src="assets/MultiPlayer.png" alt="">
-                            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank" class="btn btn-primary w-100">Play Now</a>
+                            <a href="https://multiplayer-skele-game.herokuapp.com/" target="_blank" class="btn btn-danger w-100 mt-2">Play Now</a>
                         </div>
                     </div>
                     <p class="lead py-3 text-warning">
@@ -129,30 +130,31 @@
     <!--
         DIV FOR SPACING
     -->
-    <div class="bg-secondary p-4">
-        <div class="bg-light p-1 rounded"></div>
+    <div class="bg-light p-4">
+        <div class="bg-dark p-1 rounded"></div>
     </div>
 
     <!--
         CONTACT SECTION
     -->
-    <section id="contact" class="p-5 bg-dark">
+    <section id="contact" class="p-5 bg-secondary">
         <div class="container">
 
-            <h1 class="fw-bold text-primary text-center">
+            <h1 class="fw-bold text-info text-center">
                 <i class="bi bi-link text-white text-center h1 px-2"></i>
                 Contact
                 <i class="bi bi-link text-white text-center h1 px-2"></i>
             </h1>
-            <p class="lead text-warning text-center pb-5">
+            <h5 class="text-warning text-center pb-5">
                 Professional Resume Available Upon Request
-            </p>
+            </h5>
 
             <div class="row g-4">
 
                 <div class="col-md-6 col-xl-3">
-                    <div class="card bg-secondary">
+                    <div class="card bg-dark">
                         <div class="card-body text-center">
+                            <p class="lead text-light">Send an email</p>
                             <img src="assets/gmaillogo.png" class="mb-3 rounded" alt="">
                             <a href="mailto:ProjectUnfun@gmail.com" target="_blank" class="btn btn-primary w-100">Gmail</a>
                         </div>
@@ -160,8 +162,9 @@
                 </div>
 
                 <div class="col-md-6 col-xl-3">
-                    <div class="card bg-secondary">
+                    <div class="card bg-dark">
                         <div class="card-body text-center">
+                            <p class="lead text-light">Tweet @ me</p>
                             <img src="assets/twitterLogo.png" class="mb-3 rounded" alt="">
                             <a href="https://twitter.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Twitter</a>
                         </div>
@@ -169,8 +172,9 @@
                 </div>
 
                 <div class="col-md-6 col-xl-3">
-                    <div class="card bg-secondary">
+                    <div class="card bg-dark">
                         <div class="card-body text-center">
+                            <p class="lead text-light">See my code</p>
                             <img src="assets/githubLogo.png" class="mb-3 rounded" alt="">
                             <a href="https://github.com/ProjectUnfun" target="_blank" class="btn btn-primary w-100">Github</a>
                         </div>
@@ -178,8 +182,9 @@
                 </div>
 
                 <div class="col-md-6 col-xl-3">
-                    <div class="card bg-secondary">
+                    <div class="card bg-dark">
                         <div class="card-body text-center">
+                            <p class="lead text-light">See my certs</p>
                             <img src="assets/freeCodeCampLogo.png" class="mb-3 rounded" alt="">
                             <a href="https://www.freecodecamp.org/ProjectUnfun" target="_blank" class="btn btn-primary w-100">freeCodeCamp</a>
                         </div>
@@ -193,8 +198,8 @@
     <!--
         DIV FOR SPACING
     -->
-    <div class="bg-secondary p-4">
-        <div class="bg-light p-1 rounded"></div>
+    <div class="bg-light p-4">
+        <div class="bg-dark p-1 rounded"></div>
     </div>
 
     <!--
@@ -202,20 +207,14 @@
     -->
     <footer class="p-5 bg-dark text-light text-center position-relative">
         <div class="container">
-            <div class="d-none d-md-block">
-                <img src="assets/NoTextNoBG.png" alt="" class="px-2">
-                <img src="assets/BannerPU.png" alt="">
-                <img src="assets/NoTextNoBG.png" alt="" class="px-2">
-            </div>
-
-            <p class="lead fw-bold mt-5">
-                &copy 2022 <span class="text-danger">Project Unfun</span>
-            </p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
-                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            <h4 class="fw-bold mt-2">
+                &copy 2022 Kenny - <span class="text-danger">Project Unfun</span>
+            </h4>
+            <a href="#" class="position-absolute bottom-0 end-0 p-5 arrow-nav">
+                <i class="bi bi-arrow-up-circle h1"></i>
             </a>
-            <a href="#" class="position-absolute bottom-0 start-0 p-5">
-                <i class="bi bi-arrow-up-circle h1 text-info"></i>
+            <a href="#" class="position-absolute bottom-0 start-0 p-5 arrow-nav">
+                <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
     </footer>
